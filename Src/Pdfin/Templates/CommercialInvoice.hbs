@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">{{title}}</h1>
+      <section>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Invoice Number</th>
+              <th scope="col">Invoice Date</th>
+              <th scope="col">Shipment Date</th>
+              <th scope="col">Shipper</th>
+              <th scope="col">Consignee</th>
+              <th scope="col">Notify Party</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{invoiceNumber}}</td>
+              <td>{{invoiceDate}}</td>
+              <td>{{shipmentDate}}</td>
+              <td>{{shipper}}</td>
+              <td>{{consignee}}</td>
+              <td>{{notifyParty}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Description</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each items}}
+            <tr>
+              <td>{{description}}</td>
+              <td>{{quantity}}</td>
+              <td>{{unitPrice}}</td>
+              <td>{{amount}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

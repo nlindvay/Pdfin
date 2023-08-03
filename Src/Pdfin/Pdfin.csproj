@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.18.0" />
+    <PackageReference Include="HandleBars.Net" Version="2.1.4" />
+    <PackageReference Include="Moq" Version="4.18.4" />
+    <PackageReference Include="PuppeteerSharp" Version="10.1.2" />
+  </ItemGroup>
+
+</Project>
